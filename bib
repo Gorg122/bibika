@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace bibika
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int beeps = rnd.Next();
+
+            for (int i=1;i<=beeps;i++)
+            {
+                Console.WriteLine("количество бипов {0}.", i);
+                    Console.Beep();
+                    if (i == 100)
+                        break;
+            }
+            Console.WriteLine("ВЫ ПРЕКРАСНЫ!!");
+            Console.ReadLine();
+        }
+    }
+}
